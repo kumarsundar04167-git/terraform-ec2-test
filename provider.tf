@@ -9,17 +9,17 @@ terraform {
 
 terraform {
   backend "s3" {
-    bucket         = "roboshop-s3-statefiles"
-    key            = "ec2-test.tfstate"
-    region         = "us-east-1"
-    encrypt        = true
-    
+    bucket  = "roboshop-s3-statefiles"
+    key     = "ec2-test.tfstate"
+    region  = "us-east-1"
+    encrypt = true
+
     # Modern Native S3 Locking (Terraform v1.10.0+)
-    use_lockfile   = true 
-    
+    use_lockfile = true
+
   }
 }
 
 provider "aws" {
-  region  = "us-east-1"
+  region = "us-east-1"
 }
