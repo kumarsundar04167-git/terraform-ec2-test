@@ -1,4 +1,4 @@
-module {
+module "module" {
     source = "../terraform-aws-instance"
     project = "roboshop"
     environment = "dev"
